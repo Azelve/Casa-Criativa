@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% block title %}
+        <title>Casa Criativa</title>
+    {% endblock title %}
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body id="{{bodyID}}">
+
+    <div id="container">
+
+        {% block content %}
+
+        {% endblock %}
+
+    </div>
+
+
+    <!-- MODAL FORMS -->
+
+    {% include "modal.html" %}
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
